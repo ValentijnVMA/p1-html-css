@@ -1,7 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-
 
 <head>
     <meta charset="UTF-8">
@@ -11,81 +9,115 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-
-
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <h1>Travelly</h1>
-        </div>
-        <div class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Places</a></li>
-                <li><a href="#">Discounts</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Booking</a></li>
-            </ul>
-        </div>
-        <div class="signup">
-            <a href="#">Sign Up</a>
-        </div>
-    </div>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Travelly</h1>
 
-
-
-
-    <div class="body">
-        <div class="heading">
-            <h1>Travel With Us</h1>
-            <br>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sint libero natus unde facere.
-                Nam incidunt exercitationem placeat blanditiis, voluptate obcaecati atque adipisci corporis natus
-                dolore?
-                Voluptate a veritatis corrupti.</p>
-            <br>
-            <br>
-            <a href="#">Learn More</a>
-        </div>
-
-
-
-
-        <div class="tours">
-            <div class="places">
-                <h2>Australia</h2>
-                <img src="istockphoto-480314300-170667a.jpg" style="width: 300px; height: 250px; border-radius: 12xp;">
-                <br>
-                <br>
-                <a href="#">Book Now 15% OFF</a>
             </div>
-            <div class="places">
-                <h2>New York</h2>
-                <img src="new yrkk.jpg" style="width: 300px; height: 250px; border-radius: 12xp;">
-                <br>
-                <br>
-                <a href="#">Book Now 20% OFF</a>
-            </div>
-            <div class="places">
-                <h2>Thailand</h2>
-                <img src="thaianddddd.jpg" style="width: 300px; height: 250px; border-radius: 12xp;">
-                <br>
-                <br>
-                <a href="#">Book Now 25% OFF</a>
+            <nav>
+                <div class="menu">
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Places</a></li>
+                        <li><a href="#">Discounts</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Booking</a></li>
+                        <li><a href="takeoffs.html">TakeOffs</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+
+
+            <h3 id="results">current user:&nbsp&nbsp</h3>
+
+            <div class="signup">
+
+
+                <a href="form.html">Regrister / Login</a>
+
+                <div id="results"></div>
+                <script>
+                    const resultsList = document.getElementById('results');
+                    const params = new URLSearchParams(window.location.search);
+                    const firstItem = params.get(params.keys().next().value);
+                    resultsList.append(firstItem);
+                </script>
+
             </div>
         </div>
-    </div>
+    </header>
+
+    <main>
+        <div class="body">
+            <section>
+                <div class="heading">
+                    <h3>Travel With Us</h3>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus sint libero natus unde facere.
+                        Nam incidunt exercitationem placeat blanditiis, voluptate obcaecati atque adipisci corporis
+                        natus
+                        dolore? Voluptate a veritatis corrupti.</p>
+                    <br>
+                    <br>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div class="tours">
+                    <article>
+                        <div class="places">
+                            <h2>Australia</h2>
+                            <img src="istockphoto-480314300-170667a.jpg"
+                                style="width: 300px; height: 250px; border-radius: 12px;">
+                            <br>
+                            <br>
+                            <a href="#">Book Now 15% OFF</a>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="places">
+                            <h2>New York</h2>
+                            <img src="new yrkk.jpg" style="width: 300px; height: 250px; border-radius: 12px;">
+                            <br>
+                            <br>
+                            <a href="#">Book Now 20% OFF</a>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="places">
+                            <h2>Thailand</h2>
+                            <img src="thaianddddd.jpg" style="width: 300px; height: 250px; border-radius: 12px;">
+                            <br>
+                            <br>
+                            <a href="#">Book Now 25% OFF</a>
+                        </div>
+                    </article>
+                </div>
+
+                <aside>
+                    <div class="sidebar">
+                        <!-- Content for the sidebar -->
+                    </div>
+                </aside>
 
 
+            </section>
+        </div>
+    </main>
 
-    <div class="footer">
-        <a href="#">Copyright</a>
-        <a href="#">Terms And Conditions</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Cookies</a>
-        <a href="#">Complaints</a>
-    </div>
+    <footer>
+        <div class="footer">
+            <a href="#">Copyright</a>
+            <a href="#">Terms And Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Cookies</a>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
