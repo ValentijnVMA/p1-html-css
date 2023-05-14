@@ -7,6 +7,14 @@
    
 }
 
+.flex-container {
+    display: flex;
+    background: white ;
+    justify-content: space-around;
+    height: 52vh;
+    align-items: center ;
+}
+
 .navbar {
     width: 100%;
     margin: 8px;
@@ -40,9 +48,6 @@
     font-family: "fantasy";
 }
 
-
-
-
 ul li a{
     display: block;
     padding: 20px 25px;
@@ -72,9 +77,6 @@ ul li a :hover{
 ul li:hover ul.dropdown{
     display: block;
 }
-
-
-
 
 
 .menu ul li a:hover{
@@ -117,6 +119,7 @@ ul li:hover ul.dropdown{
     width: 70%;
     text-align: center;
     color: #fff;
+    height: 160px;
 }
 
 .table1{
@@ -204,7 +207,7 @@ table {
     background-color: black;
 }
 
-  th, td {
+th, td {
     border: 1px solid black;
     padding: 8px;
     text-align: left;
