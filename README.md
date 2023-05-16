@@ -1,2 +1,1 @@
-# Laatste versie Travelly website staat online ->
-# https://valentijnvma.github.io/p1-html-css/
+# Travelly website online link -> https://valentijnvma.github.io/p1-html-css/
