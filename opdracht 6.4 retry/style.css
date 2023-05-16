@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-family: "Goldman", cursive;
+    background-color: black;
+    height: 100vh;
+  }
+  
+  p
+  {
+    color: white;
+    font-size: 15px;
+  
+  }
+  
+  
+  
+  
+  
+  h1,h2,h3
+  {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 2rem;
+  
+  }
+  
+  
+  nav {
+    display: flex;
+    width: 100%;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    background: #00a8c7;
+    justify-content: space-between;
+    position: fixed;
+  }
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+  }
+  nav li {
+    font-size: 2.5rem;
+    padding: 0 4rem 0 4rem;
+  }
+  nav a {
+    color:white;
+    text-decoration: none;
+  }
+  nav img {
+    width: 5vw;
+  }
+  
+  .content h1{
+    text-align: center;
+  }
+
+   .Menu-area li:hover .line-1 > li
+  {
+    display: block;
+    top: 0;
+  
+  }
+  
+  .line-1 li 
+  {
+    display: none;
+    position: relative;
+  }
+  
+  .line-1
+  {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+  }
+  .Menu-area li
+  {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .Menu-area a
+  {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-family: "Goldman", cursive;
+    font-weight: 900;
+    color: #fff;
+    background: #00a8c7;
+  
+  
+  
+  }
+  
+  .Menu-area ul
+  {
+    list-style: none;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  
+  .Menu-area a:hover
+  {
+    color: black;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1),
+                -4px -4px 10px white,
+                4px 4px 10px rgba(0, 0, 0, 0.1)inset,
+                -4px -4px 10px white inset,
+  
+  
+  }
+  
+  .wrapper
+  {
+    width: 1000px;
+  }
+
+  footer
+  {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background: #00a8c7;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+  }
